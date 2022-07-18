@@ -99,6 +99,7 @@ class PictureInPictureMain: BaseViewController {
         
         // Setup raw video data frame observer
         agoraKit.setVideoDataFrame(self)
+        agoraKit.setParameters("{\"che.video.enable_bg_hw_decodec\": true}")
         
         // start joining channel
         // 1. Users can only see each other after they join the
